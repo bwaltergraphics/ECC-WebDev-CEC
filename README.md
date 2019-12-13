@@ -1,0 +1,1 @@
+# ecc-cec-wordpress-theme
