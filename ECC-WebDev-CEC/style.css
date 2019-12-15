@@ -17,7 +17,6 @@ Version: 1.0
 
 
 
-
 h3, h4, li, p{
     font-family: 'Open Sans', sans-serif;
 }
@@ -27,9 +26,104 @@ a {
     text-decoration: none;
 }
 
+a:link, a:visited {
+        color: rgb(252, 252, 252);
+        text-decoration: none;
+}
+
+
+/* nav menu styles */
+.site-nav {
+        /*border-bottom: #777 2px dotted; */
+        background-color: rgba(180, 177, 177, 0.048);
+        /* box-shadow: rgba(7, 7, 7, 0.678) 2px 2px 4px; */
+}
+
+.site-nav ul {
+        padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after {content: ""; display:table;}
+.site-nav ul:after {clear:both;}
+.site-nav ul {*zoom: 1;}
+
+.site-nav ul li {
+        list-style:none;
+        float:right;
+        background-color: #021f55e5;
+}
+
 /* header styles */
+.title-break-line {
+        width: 300px;
+        margin:auto;
+        border: 1px black solid;
+}
+.site-header {
+        border-bottom: 3px solid rgb(82, 80, 80);
+        background-image: url("screenshot.png") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center ;
+        
+}
+.header-desc {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        
+}
+.header-logo {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding-top: 10px;
+        margin:auto;
+}
+.site-header nav ul li {
+        margin-right: 5px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+        display: block;
+        padding: 10px 18px;
+        border: 1px solid #bbb;
+        border-bottom: none;
+        text-decoration: none;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu.item a:visited {
+        background-color: #00984e;
+        color: #fff !important;
+        border: 2px solid #000000;
+}
 
+.site-header nav ul li a:hover {
+        background-color: #5a58587e;
+}
 
+/* footer styles */
+.site-footer nav ul li {
+        margin-right: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-right: 1px dotted rgb(0, 0, 0);
+        float:left;
+        background-color: rgba(119, 119, 119, 0);
+}
+.site-footer {
+        margin-top: 30px;
+        border-top: 2px solid #999;
+        background-color:#00984e;
+        padding-bottom: 3px;
+        padding-left: 5px
+}
+/*body styling */
 .jumbo {
     height: 100px;
     background-image: url("../images/MainImage.png");
@@ -66,9 +160,10 @@ h1{
     margin-top: 10%;
     text-align: center;
     font-size: 2.5em;
-    color: #00984e;
+    color: #021f55e5;
     font-family: 'Solway', serif;
     font-weight: 400;
+    
 }
 
 .intro-copy {
@@ -191,4 +286,5 @@ h2.title {
         height: 60px;
         margin: 0 0%;
         float: left;
+}
 }
