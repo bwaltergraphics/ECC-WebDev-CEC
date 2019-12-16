@@ -34,7 +34,7 @@
                 <!--site header-->
 
                 <header class="site-header">
-                    <!-- why won't this pull styling???? ** fixed **-->
+                    <!-- why won't this pull styling???? * fixed-->
                 <div class="nav-button" ><button> 🞬 </button></div>
                 <nav class="site-nav desktop-menu">
                         <?php
