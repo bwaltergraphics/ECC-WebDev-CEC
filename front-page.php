@@ -15,6 +15,7 @@
     <div class="one-col-container" id="box1">
 
         <?php
+        
             if ( have_posts() ) : 
             while ( have_posts() ) : the_post(); 
                 // Display post content
