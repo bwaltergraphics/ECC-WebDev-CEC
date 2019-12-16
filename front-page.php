@@ -13,7 +13,6 @@
 <!-- Intro Section -->
 <section>
     <div class="one-col-container" id="box1">
-
         <?php
             if ( have_posts() ) : 
         
