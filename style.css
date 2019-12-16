@@ -65,7 +65,6 @@ a:link, a:visited {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center ;
-        position: fixed !important;
         
 }
 .header-desc {
@@ -84,8 +83,6 @@ a:link, a:visited {
         margin-top: 10px;
         padding-top: 10px;
         margin:auto;
-        position: fixed;
-        transform: translate3d(-50%, -50%, 0);
 }
 .site-header nav ul li {
         margin-right: 5px;
@@ -323,7 +320,7 @@ button {
         display: block !important;
         padding: 2vw;
         font-size: 3vh;
-        background-color:  #021f55e5 ;
+        background-color:  #021f55e5;
         border: none;
         outline: none;
         cursor: pointer;
