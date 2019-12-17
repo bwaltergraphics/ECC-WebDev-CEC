@@ -17,10 +17,14 @@
             if ( have_posts() ) : 
             while ( have_posts() ) : the_post(); 
                 // Display post content
-
+                /* echo "<h1 class'headline'>";
                 the_title();
+                echo"</h1>";
+                */
 
+                echo "<h3 class='intro-copy'>";
                 the_content();
+                echo "</h3>";
             endwhile; 
         endif; 
         ?>
@@ -35,27 +39,27 @@
             <div class="flex-container">
                
                 <div class="flex-col-container">
-                        <img  src="images/manufacturing-icon.png" alt="manufacturing icon">
+                        <img  src="../images/manufacturing-icon.png" alt="manufacturing icon">
                         <h4>Manufacturing</h4>
                 </div>
 
                 <div class="flex-col-container" >
-                     <img  src="images/construction-Icon.png" alt="manufacturing icon">
+                     <img  src="../images/construction-Icon.png" alt="manufacturing icon">
                     <h4>Construction and Installation</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="images/distribution-Icon.png" alt="manufacturing icon">
+                    <img  src="../images/distribution-Icon.png" alt="manufacturing icon">
                     <h4>Energy Distribution</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="images/consulting-icon.png" alt="manufacturing icon">
+                    <img  src="../images/consulting-icon.png" alt="manufacturing icon">
                     <h4>Professional Services and Consulting</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="images/policy-icon.png" alt="manufacturing icon">
+                    <img  src="../images/policy-icon.png" alt="manufacturing icon">
                     <h4>Public Policy and Advocacy</h4>
                 </div>
 
@@ -65,12 +69,14 @@
 
 <!-- Green Bar Comments Section -->
 <section class="goal-area" id="box2">
-    <div class="one-col-container">               
-        <?php
-        /* goal copy widget*/
+    <div class="one-col-container"> 
+                      
+        <?php 
+            /* goal copy widget*/
+            dynamic_sidebar( 'goal_area_sidebar' ); 
+            ?>
+        </div>
 
-        ?>
-    </div>
 </section>
 
 
@@ -78,9 +84,10 @@
 <section>
     <div class="one-col-container" id="box3">
         <?php 
-        /* logo gallery widget*/
-
-        ?>
+            /* logo gallery widget*/
+            dynamic_sidebar( 'logo_area_sidebar' );
+            ?>
+        </div>
     </div>
 </section>
 
