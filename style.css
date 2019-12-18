@@ -35,9 +35,9 @@ a:link, a:visited {
 /* nav menu styles */
 .site-nav {
         padding-top:5px;
-        /*border-bottom: #777 2px dotted; */
+        /*border-bottom: #777 2px dotted; 
         background-color: rgba(180, 177, 177, 0.048);
-        /* box-shadow: rgba(7, 7, 7, 0.678) 2px 2px 4px; */
+        box-shadow: rgba(7, 7, 7, 0.678) 2px 2px 4px; */
         z-index: 1000;
 }
 
@@ -50,7 +50,7 @@ a:link, a:visited {
 .site-nav ul {*zoom: 1;}
 
 .site-nav ul li {
-        margin-top:40px;
+        margin-top:10px;
         list-style:none;
         float:right;
         background-color: #021f55e5;
@@ -70,7 +70,7 @@ a:link, a:visited {
 }
 .site-header {
         /*border-bottom: 3px solid rgb(82, 80, 80);
-        background-image: url("screenshot.png") ;*/
+        background-image: url("screenshot.png")*/ 
         background-color: #d5effc;
         background-repeat: no-repeat;
         background-size: cover;
@@ -78,6 +78,8 @@ a:link, a:visited {
         position: fixed;
         width: 100%;
         z-index: 1000;
+        transition: 0.4s; 
+        height:150px;
 }
 .title-name {
         margin:auto !important;
@@ -99,6 +101,12 @@ a:link, a:visited {
         padding-top: 10px; 
         margin:auto;
         z-index: 2000;
+        transition: 1s; 
+        width: 400px; /* if important, jquery doesnt work. if no important, inherits 100%wid*/
+        height: auto
+}
+.header-logo img {
+        transition-duration: .4s
 }
 .site-header nav ul li {
         margin-right: 5px;

@@ -15,23 +15,57 @@
         <script>
             $(document).ready(function(){
                 $("button").click(function(){
-                    
-                    if($("button").text() == "☰"){
-                    $("button").text("🞬");
-                    }else{
-                        $("button").text("☰");
-                    }
-                     $("li").toggle("slow");
-                    });
-                });
-                $(window).on("scroll", function() {
-  var yPos = $(this).scrollTop(),
-      yPer = (yPos / 120);
 
-      if (yPer > 1) {
-         yPer = 1;
-      }
-});
+                    if($("button").text() == "☰"){
+                        $("button").text("🞬");
+                        }else{
+                        $("button").text("☰");
+                        }
+                        $("li").toggle("slow");
+                        });
+                        });
+                        //$(window).on("scroll", function() {
+                        $(function(){
+                        $('.site-header').data('size','big');
+                        });
+
+            $(window).scroll(function(){
+                if($(document).scrollTop() > 0){
+                    if($('.site-header').data('size') == 'big'){
+                        $('.site-header').data('size','small');
+                        $('.site-header').stop().animate({
+                        height:'70px'
+                        },600);
+                        $('.site-header nav ul li').data('size','small'); //not working. targets data, not element
+                        }
+                        }
+                    else {
+                        if($('.site-header').data('size') == 'small')
+                        {
+                        $('.site-header').data('size','big');
+                        $('.site-header').stop().animate({
+                        height:'150px'
+                        },50);
+                        }  
+                        }
+                        });
+            $(document).scroll(function() {
+                $('.header-logo img').css({width: $(this).scrollTop() > 90? "50%":"100%"});
+                });
+               // $('.site-header').css({box-shadow: $(this).scrollTop() > 90? "rgba(7, 7, 7, 0.678) 2px 2px 4px;": "none"}); //not working
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                $(document).scroll(function() { 
+                    scroll_pos = $(this).scrollTop();
+                    if(scroll_pos > 100) {
+                        $(".site-header").css('background-color', '#d5effc80');
+                        $('.site-header').css("box-shadow","2px 2px 4px #000");
+                    } else {
+                        $(".site-header").css('background-color', '#d5effc');
+                        $('.site-header').css("box-shadow","");
+                    }
+                });
+            });
         </script>
             
     </head>
