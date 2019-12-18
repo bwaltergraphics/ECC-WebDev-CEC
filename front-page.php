@@ -73,7 +73,7 @@
                       
         <?php 
             /* goal copy widget*/
-            dynamic_sidebar( 'goal_area_sidebar' ); 
+            dynamic_sidebar( 'goal-area-sidebar' ); 
             ?>
         </div>
 
@@ -85,7 +85,7 @@
     <div class="one-col-container" id="box3">
         <?php 
             /* logo gallery widget*/
-            dynamic_sidebar( 'logo_area_sidebar' );
+            dynamic_sidebar( 'logo-area-sidebar' );
             ?>
         </div>
     </div>

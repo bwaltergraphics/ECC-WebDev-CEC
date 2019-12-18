@@ -41,26 +41,27 @@ add_action( 'wp_enqueue_scripts', 'wdm_mm_toggle_scripts' );
  * Derived by https://codex.wordpress.org/Function_Reference/register_sidebars
  * 
  * Created by William Walter 12/17/2019
- */
-function ecc_web_dev_custom_sidebars() {
+*/
+
+
+function ecc_web_custom_sidebars() {
     register_sidebar( array(
-        'name' => __( 'Green Bkgd Goal Area' ),
-        'id' => 'goal_area_sidebar',
+        'name' => __( 'Green Backgnd Goal Area' ),
+        'id' => 'goal-area-sidebar',
         'description' => 'Widgets in this area will be shown on the Goals Area Green Section',
-        'before_widget' => '<li>',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h3 class="widgettitle">',
-        'after_title'   => '</h3>',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
     ) );
     register_sidebar( array(
         'name' => __( 'Logo area for school logos' ),
-        'id' => 'logo_area_sidebar',
-        'description' => 'Widgets in this area will be shown school logos area',
-        'before_widget' => '<li>',
-        'after_widget'  => '</li>',
-        'before_title'  => '<h3 class="widgettitle">',
+        'id' => 'logo-area-sidebar',
+        'description' => 'Widgets here will show in the logo area',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h3>',
         'after_title'   => '</h3>',
     ) );
 }
-add_action( 'widgets-init', 'ecc_web_dev_custom_sidebars' );
-
+add_action( 'widgets_init', 'ecc_web_custom_sidebars' );

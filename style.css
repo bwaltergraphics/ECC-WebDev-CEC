@@ -184,7 +184,7 @@ h3.intro-copy {
         font-size: 1.5em;
 }
   
-.one-col-container h2{
+.one-col-container h2 h3{
     color: #777;
     font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
@@ -192,6 +192,15 @@ h3.intro-copy {
     text-align: center;
     padding-bottom: 40px;
 }
+
+.one-col-container  h3{
+        color: #777;
+        font-size: 1.25em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 40px;
+    }
 
 
 .flex-container{
@@ -219,9 +228,9 @@ h3.intro-copy {
 
 
 .goal-area{
-        height: 50px;
+        height: auto;
         background-color: #00984e;
-        padding-top: 10%;
+        padding-top: 5%;
         margin: 2% 0 2% 0;
 }
 
@@ -233,9 +242,9 @@ h3.intro-copy {
         font-weight: 400;
         height: auto;
         background-color: #00984e;
-        padding-top: 10%;
-        margin: 10% 0 10% 0;
-        padding-bottom: 10%;
+        padding-top: 1%;
+        margin: 1% 0 1% 0;
+        padding-bottom: 1%;
 }
 
 .goal-area h3{
@@ -255,7 +264,7 @@ h3.intro-copy {
         margin: 20px 10% 20px 20%;
     }
 
-.pages-col-container .inside-content p{
+.pages-col-container p {
         color: #777;
         font-size: 1em;
         font-family: 'Open Sans', sans-serif;
