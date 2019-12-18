@@ -27,8 +27,20 @@
                         //$(window).on("scroll", function() {
                         $(function(){
                         $('.site-header').data('size','big');
-                        });
-
+                });
+            $(document).ready(function(){       
+                var scroll_pos = 0;
+                $(document).scroll(function() { 
+                    scroll_pos = $(this).scrollTop();
+                    if(scroll_pos > 100) {
+                        $(".site-header").css('background-color', '#d5effc80');
+                        $('.site-header').css("box-shadow","2px 2px 4px #000");
+                    } else {
+                        $(".site-header").css('background-color', '#d5effc');
+                        $('.site-header').css("box-shadow","");
+                    }
+                });
+            });
             $(window).scroll(function(){
                 if($(document).scrollTop() > 0){
                     if($('.site-header').data('size') == 'big'){
@@ -36,7 +48,7 @@
                         $('.site-header').stop().animate({
                         height:'70px'
                         },600);
-                        $('.site-header nav ul li').data('size','small'); //not working. targets data, not element
+                        $('.site-header nav ul li').data('size','small'); //not working. targets data, not element.  May need to do transition to shrink 
                         }
                         }
                     else {
@@ -53,28 +65,12 @@
                 $('.header-logo img').css({width: $(this).scrollTop() > 90? "50%":"100%"});
                 });
                // $('.site-header').css({box-shadow: $(this).scrollTop() > 90? "rgba(7, 7, 7, 0.678) 2px 2px 4px;": "none"}); //not working
-            $(document).ready(function(){       
-                var scroll_pos = 0;
-                $(document).scroll(function() { 
-                    scroll_pos = $(this).scrollTop();
-                    if(scroll_pos > 100) {
-                        $(".site-header").css('background-color', '#d5effc80');
-                        $('.site-header').css("box-shadow","2px 2px 4px #000");
-                    } else {
-                        $(".site-header").css('background-color', '#d5effc');
-                        $('.site-header').css("box-shadow","");
-                    }
-                });
-            });
         </script>
-            
     </head>
 
     <body <?php body_class(); ?>>
         <div class="container">
-
                 <!--site header-->
-
                 <header class="site-header">
                     <!-- why won't this pull styling???? * fixed-->
                 <div class="nav-button" ><button> 🞬 </button></div>
@@ -90,10 +86,7 @@
                         $args = array(
                             'theme_location' => 'primary'
                         );
-
                         ?>
-
-
                         <?php wp_nav_menu( $args );
                         /* The below code checks if a mobile-menu is set from the backend in the menu settings. If a menu has been set it will be displayed in the header. Or else, a menu has not been set then display a message.*/
                         ?>
@@ -113,10 +106,7 @@
                             echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
                         } ?>
                     </nav>
-                
-                    
                 </header><!--/site-header-->
-        
                 <div class="name-desc-container">
                     <div class="title-name"><h1><?php bloginfo('name'); ?></h1></div><br>
                     <hr class="title-break-line" />
