@@ -14,8 +14,8 @@ register_nav_menus(array(
 ));
 //logo support added 
 add_theme_support( 'custom-logo', array(
-	'height'      => 100,
-	'width'       => 400,
+	'height'      => 50,
+	'width'       => 200,
 	'flex-height' => true,
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),

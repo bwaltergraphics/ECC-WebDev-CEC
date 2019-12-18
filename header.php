@@ -24,6 +24,14 @@
                      $("li").toggle("slow");
                     });
                 });
+                $(window).on("scroll", function() {
+  var yPos = $(this).scrollTop(),
+      yPer = (yPos / 120);
+
+      if (yPer > 1) {
+         yPer = 1;
+      }
+});
         </script>
             
     </head>
@@ -37,6 +45,13 @@
                     <!-- why won't this pull styling???? * fixed-->
                 <div class="nav-button" ><button> 🞬 </button></div>
                 <nav class="site-nav desktop-menu">
+                <div class="header-logo">
+                       <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); 
+                    ?>
+                     <a href="<?php echo home_url(); ?>"><img src="<?php echo $image[0]; ?>" alt=""></a>
+                </div>
                         <?php
                         $args = array(
                             'theme_location' => 'primary'
@@ -64,21 +79,15 @@
                             echo "<ul class='nav mobile-menu'> <font style='color:red'>Mobile Menu has not been set</font> </ul>";
                         } ?>
                     </nav>
-                <div class="header-logo">
-                       <?php 
-                        $custom_logo_id = get_theme_mod( 'custom_logo' );
-                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                    ?>
-                     <a href="<?php echo home_url(); ?>"><img src="<?php echo $image[0]; ?>" alt=""></a>
-                    <h1><?php bloginfo('name'); ?></h1>
-                    <hr class="title-break-line" />
-                    <div class="header-desc"><h3><?php bloginfo('description'); ?></h3><div>
-
+                
                     
-
                 </header><!--/site-header-->
         
-    
+                <div class="name-desc-container">
+                    <div class="title-name"><h1><?php bloginfo('name'); ?></h1></div><br>
+                    <hr class="title-break-line" />
+                    <div class="header-desc"><h3><?php bloginfo('description'); ?></h3></div>
+                </div>  
 
 
     
