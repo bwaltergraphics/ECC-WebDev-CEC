@@ -124,7 +124,7 @@ a:link, a:visited {
         padding-left: 5px
 }
 /*body styling */
-.attachment-thumbnail .size-thumbnail {
+#gallery-1 img {
 	border: none !important;
 }
 
