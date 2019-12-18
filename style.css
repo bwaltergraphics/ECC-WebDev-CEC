@@ -129,7 +129,7 @@ a:link, a:visited {
     background-image: url("../images/MainImage.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     text-align: center;
     vertical-align: middle;
     overflow: hidden;
