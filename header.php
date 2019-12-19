@@ -107,11 +107,11 @@
                         } ?>
                     </nav>
                 </header><!--/site-header-->
-                <div class="name-desc-container">
+                <!--<div class="name-desc-container">
                     <div class="title-name"><h1><?php bloginfo('name'); ?></h1></div><br>
                     <hr class="title-break-line" />
                     <div class="header-desc"><h3><?php bloginfo('description'); ?></h3></div>
-                </div>  
+                </div>  -->
 
 
     
