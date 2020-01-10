@@ -153,9 +153,14 @@ a:link, a:visited {
 }
 
 
+.header-spacer{
+        height:150px;
+        width: 100%;
+        background-color: #d5effc;
+}
+
 .jumbo {
-    margin-top: 130px;
-    height: 70vh;
+    height: 60vh;
     background-image: url("../images/MainImage.png");
     background-repeat: no-repeat;
     background-size: cover;

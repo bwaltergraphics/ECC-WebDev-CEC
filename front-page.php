@@ -3,6 +3,9 @@
 ?>
 
 <!-- Big Top Graphic -->
+    <div class="header-spacer">
+    </div>
+
     <div class="jumbo"> 
         <div class="one-col-container">
             <h2 class="title">SUNY Clean Energy Consortium</h2>
