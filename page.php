@@ -6,6 +6,9 @@ get_header();
 ?>
 
 <section>
+    <div class="header-spacer">
+    </div>
+
     <div class="pages-col-container" id="box3">
         <?php 
         if ( have_posts() ) : 
