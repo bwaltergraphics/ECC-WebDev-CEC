@@ -236,7 +236,7 @@ h3.intro-copy {
         font-weight: 400;
         text-align: center;
         padding-bottom: 40px;
-    }
+}
 
 
 .flex-container{
@@ -302,7 +302,7 @@ h3.intro-copy {
 .pages-col-container{
         max-width: 900px;
         margin: 30px auto 20px auto;
-    }
+ }
 
 .pages-col-container p {
         color: #777;
@@ -310,11 +310,24 @@ h3.intro-copy {
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         padding-bottom: 2px;
-    }
+}
 
+
+.pages-col-container{
+        max-width: 900px;
+        margin: 30px auto 20px auto;
+ }
+
+.pages-col-container h1 {
+        color: #00984e;;
+        font-size: 2em;
+        font-family: 'Solway', serif;
+        font-weight: 400;
+        padding-bottom: 1.5px;
+}
 
 /* Small Phone to small tablets from 550 - 875px */
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 925px) {
 
 
 .jumbo .one-col-container .title{
@@ -322,7 +335,7 @@ h3.intro-copy {
         margin:0; 
         padding-right: 0%;
         margin-top: 4%;
-    }
+ }
 
 
 
@@ -355,10 +368,19 @@ h3.intro-copy {
         margin: 0 0%;
         float: left;
 }
+.pages-col-container{
+        max-width: 900px;
+        margin: 30px 10% 20px 10%;
+}
+
+.gallery-item{
+        width: 50% !important;
+        }
+
 }
 .mobile-menu{
         display: none;
-    }
+}
 @media only screen and (min-width: 800px){
 .desktop-menu{
         display: block !important;
@@ -369,6 +391,8 @@ h3.intro-copy {
 .nav-button {
         display:none !important;
 }
+
+
 }
 
 @media only screen and (max-width: 799px){
@@ -401,3 +425,12 @@ button {
         background-color: seagreen;
 }
 }
+
+@media only screen and (max-width: 400px){
+.gallery-item{
+        width: 100% !important;
+        }
+
+
+}
+
