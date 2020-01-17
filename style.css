@@ -305,8 +305,8 @@ h3.intro-copy {
  }
 
 .pages-col-container p {
-        color: #777;
-        font-size: 1em;
+        color: #555;
+        font-size: 1.2em;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         padding-bottom: 2px;
@@ -323,7 +323,16 @@ h3.intro-copy {
         font-size: 2em;
         font-family: 'Solway', serif;
         font-weight: 400;
+        padding-bottom: 25px;
+}
+
+.pages-col-container h3 {
+        color: #00984e;;
+        font-size: 1.2em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
         padding-bottom: 1.5px;
+        margin-top: 25px !important;
 }
 
 /* Small Phone to small tablets from 550 - 875px */
