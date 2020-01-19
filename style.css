@@ -161,7 +161,6 @@ a:link, a:visited {
 
 .jumbo {
     height: 60vh;
-    background-image: url("../images/MainImage.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

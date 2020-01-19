@@ -3,7 +3,7 @@
 ?>
 
 <!-- Big Top Graphic -->
-    <div class="jumbo"> 
+    <div class="jumbo" style="background-image: url('<?php get_template_directory_uri(); ?>/images/MainImage.png');"> 
         <div class="one-col-container">
             <h2 class="title">SUNY Clean Energy Consortium</h2>
         </div> 
