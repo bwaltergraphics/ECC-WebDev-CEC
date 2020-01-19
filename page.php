@@ -18,7 +18,7 @@ get_header();
                 the_title();
                 echo "</h1>";
 
-                echo "<div class='inside-content'";
+                echo "<div class='inside-content'>";
                 the_content();
                 echo "</div>";
             endwhile; 
