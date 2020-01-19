@@ -42,27 +42,27 @@
             <div class="flex-container">
                
                 <div class="flex-col-container">
-                        <img  src="<?php echo get_template_directory_uri(); ?>/images/manufacturing-icon.png');" alt="Manufacturing-Icon">
+                        <img  src="<?php echo get_template_directory_uri(); ?>/images/manufacturing-icon.png" alt="Manufacturing-Icon">
                         <h4>Manufacturing</h4>
                 </div>
 
                 <div class="flex-col-container" >
-                     <img  src="<?php echo get_template_directory_uri(); ?>/images/construction-Icon.png');" alt="Construction and Installation-Icon">
+                     <img  src="<?php echo get_template_directory_uri(); ?>/images/construction-Icon.png" alt="Construction and Installation-Icon">
                     <h4>Construction and Installation</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/distribution-Icon.png');" alt="distribution-Icon">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/distribution-Icon.png" alt="distribution-Icon">
                     <h4>Energy Distribution</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/consulting-icon.png');" alt="Professional Services and Consulting-Icon">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/consulting-icon.png" alt="Professional Services and Consulting-Icon">
                     <h4>Professional Services and Consulting</h4>
                 </div>
 
                 <div class="flex-col-container">
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/policy-icon.png');" alt="Public Policy and Advocacy-Icon">
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/policy-icon.png" alt="Public Policy and Advocacy-Icon">
                     <h4>Public Policy and Advocacy</h4>
                 </div>
 
