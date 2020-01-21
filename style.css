@@ -35,7 +35,7 @@ a:link, a:visited {
 /* nav menu styles */
 .site-nav {
         padding-top:5px;
-        /*border-bottom: #777 2px dotted; 
+        /*border-bottom: #555 2px dotted; 
         background-color: rgba(180, 177, 177, 0.048);
         box-shadow: rgba(7, 7, 7, 0.678) 2px 2px 4px; */
         z-index: 1000;
@@ -212,7 +212,7 @@ a:link, a:visited {
 }
 
 h3.intro-copy {
-        color: #777;
+        color: #555;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
@@ -220,7 +220,7 @@ h3.intro-copy {
 }
   
 .one-col-container h2{
-    color: #777;
+    color: #555;
     font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -229,7 +229,7 @@ h3.intro-copy {
 }
 
 .one-col-container  h3{
-        color: #777;
+        color: #555;
         font-size: 1.25em;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
@@ -253,7 +253,7 @@ h3.intro-copy {
 
 .flex-col-container h4 {
         text-align: center;
-        color: #777;
+        color: #555;
 }
 
 .flex-col-container img {
@@ -308,7 +308,9 @@ h3.intro-copy {
         font-size: 1.2em;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400;
-        padding-bottom: 2px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
 }
 
 
@@ -325,13 +327,71 @@ h3.intro-copy {
         padding-bottom: 25px;
 }
 
-.pages-col-container h3 {
+.pages-col-container h4 {
         color: #00984e;;
-        font-size: 1.2em;
+        font-size: 1em;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         padding-bottom: 1.5px;
-        margin-top: 25px !important;
+        margin-top: 8px !important;
+}
+
+
+.pages-col-container h3 {
+        color: #00984e;;
+        font-size: 1.4em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding-bottom: 1.5px;
+        margin-top: 8px !important;
+}
+
+.pages-col-container h2 {
+        color: #00984e;;
+        font-size: 1.6em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        padding-bottom: 1.5px;
+        margin-top: 8px !important;
+}
+
+
+/* Form Styles */
+
+
+#nf-form-title-1{
+        display: none;
+}
+
+.nf-form-fields-required{
+        color: #555;;
+        font-size: .9em;
+        font-family: 'Open Sans', sans-serif; 
+        font-weight: 400;
+}
+
+#nf-field-1-container{
+        color: #555;;
+        font-size: 1.4em;
+        font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#nf-field-2-container{
+        color: #555;;
+        font-size: 1.4em;
+        font-family: 'Open Sans', sans-serif;
+}
+
+#nf-field-3-container{
+        color: #555;;
+        font-size: 1.4em;
+        font-family: 'Open Sans', sans-serif;
+}
+
+#nf-field-4 {
+        background: #1d3d7c;
 }
 
 /* Small Phone to small tablets from 550 - 875px */
@@ -366,7 +426,7 @@ h3.intro-copy {
 
 .flex-col-container h4 {
         text-align: left;
-        color: #777;
+        color: #555;
         padding: 10px 0 0 80px;
         font-size: 1.25em;
 }
