@@ -508,6 +508,9 @@ button {
 .nav-button {
         background-color: seagreen;
 }
+.site-header {
+     height: 0px;  
+}
 }
 
 @media only screen and (max-width: 400px){
