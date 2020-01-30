@@ -21,10 +21,10 @@
                 
             /* Mobile menu functionality */
                 $("button").click(function(){
-                    if($("button").text() == '\u2716'){
-                        $("button").text('\u2630');
+                    if($("button").text() == '\u2716\uFE0E'){
+                        $("button").text('\u2630\uFE0E');
                         }else{
-                        $("button").text('\u2716');
+                        $("button").text('\u2716\uFE0E');
                         }
                         $("li").toggle("slow");
                         });
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <!-- mobile nav buttons-->
-                <div class="nav-button" ><button> &#9776 </button></div>
+                <div class="nav-button" ><button> &#9776&#xFE0E </button></div>
                 <!-- desktop menu/nav content-->
                 <nav class="site-nav desktop-menu">
                     <div class="header-logo">
