@@ -394,6 +394,22 @@ h3.intro-copy {
         background: #1d3d7c;
 }
 
+/* Program styling */
+
+.program-title {
+border-top: 5px solid #00984e;
+
+}
+.program-main {
+border-top: 5px solid #00984e;
+border-left: 5px solid #00984e;
+}
+.program-sidebar {
+background-color: #d5effc !important;
+border: 10px solid #d5effc;
+
+}
+
 /* Small Phone to small tablets from 550 - 875px */
 @media only screen and (max-width: 925px) {
 
